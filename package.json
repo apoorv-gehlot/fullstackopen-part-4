@@ -1,0 +1,28 @@
+{
+  "name": "blog-list",
+  "version": "1.0.0",
+  "description": "In the exercises for this part we will be building a blog list application, that allows users to save information about interesting blogs they have stumbled across on the internet. For each listed blog we will save the author, title, url, and amount of upvotes from users of the application.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apoorv-gehlot/fullstackopen-part4.git"
+  },
+  "author": "Apoorv Gehlot",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/apoorv-gehlot/fullstackopen-part4/issues"
+  },
+  "homepage": "https://github.com/apoorv-gehlot/fullstackopen-part4#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "mongoose": "^6.2.3"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.0",
+    "nodemon": "^2.0.15"
+  }
+}
