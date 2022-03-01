@@ -54,6 +54,13 @@ const blogWithMaxVotes = {
     likes: 12,
 }
 
+const authorWithMaxBLogs = { autor: 'Robert C. Martin', blogs: 3 }
+
+const authorWithMaxLikes = {
+    author: "Edsger W. Dijkstra",
+    likes: 17
+}
+
 test('test dummy helper', () => {
     expect(listHelper.dummy([])).toBe(1)
 })
@@ -67,5 +74,17 @@ describe('total likes', () => {
 describe('favourite blog', () => {
     test('favourite blog', ()=> {
         expect(listHelper.favouriteBlog(blogs)).toEqual(blogWithMaxVotes)
+    })
+})
+
+describe('author having maximum blogs', () =>{
+    test('max blog', ()=>{
+        expect(listHelper.mostBlogs(blogs)).toEqual(authorWithMaxBLogs)
+    })
+})
+
+describe('author received maximum likes on all blogs', () =>{
+    test('most likes', ()=>{
+        expect(listHelper.mostLikes(blogs)).toEqual(authorWithMaxLikes)
     })
 })
